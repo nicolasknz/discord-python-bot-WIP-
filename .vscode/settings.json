@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/venv/bin/python",
+        "./core/commands"
+    ]
+}
