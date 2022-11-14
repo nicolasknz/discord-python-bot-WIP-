@@ -1,9 +1,9 @@
-from core import app
+# from core import app
 
-@app.route('/')
-def index():
-    return 'Sup dude'
+# @app.route('/')
+# def index():
+#     return 'Sup dude'
 
-@app.route('/other')
-def other():
-    return 'Other'
+# @app.route('/other')
+# def other():
+#     return 'Other'
