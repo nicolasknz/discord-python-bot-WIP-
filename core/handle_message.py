@@ -1,6 +1,9 @@
 from core import commands
 import discord
+from dotenv import dotenv_values
+import os
 
+dotenv_values()
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -29,6 +32,8 @@ async def on_message(message):
         await message.channel.send(command_found['callback'](message))
 
 
-client.run('NDg2NjkzNTU5NjcyNzY2NDg1.G_unwN.OPe1Al06f7VW3csrZBWkd9_a39ysrSwobuSSV4')
+
+token = os.environ.get("DISCORD_SECRET")
+client.run(token)
 
 
